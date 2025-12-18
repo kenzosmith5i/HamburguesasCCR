@@ -46,12 +46,13 @@ body {
 }
 
 .imagen img {
-    max-width: 100%;
+    width: 100%; /* ocupa todo el ancho disponible */
+    max-width: 400px; /* opcional: para que no crezca demasiado en PC */
     height: auto;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
-/* 📱 Ajustes para celulares */
+
 @media (max-width: 768px) {
     .contenedor-principal {
         flex-direction: column; /* columna en vez de fila */
@@ -79,7 +80,11 @@ body {
     }
 
     .imagen img {
-        max-width: 90%; /* un poquito de margen */
+        width: 100%;         /* ocupa todo el ancho disponible */
+        max-width: none;     /* permite crecer al 100% */
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
     }
 }
 

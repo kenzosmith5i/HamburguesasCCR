@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5a600; /* naranja como tu ejemplo */
+}
+
+.contenedor-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.texto {
+    flex: 1; /* ocupa espacio proporcional */
+}
+
+.texto h1 {
+    font-size: 3em; /* tamaño grande */
+    color: #0000ff; /* azul */
+    margin-bottom: 10px;
+}
+
+.texto p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.texto button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #33cc33;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.imagen {
+    flex: 1; /* ocupa el otro espacio */
+    display: flex;
+    justify-content: flex-end; /* la imagen se alinea a la derecha */
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+}
+

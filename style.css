@@ -51,4 +51,36 @@ body {
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
+/* 📱 Ajustes para celulares */
+@media (max-width: 768px) {
+    .contenedor-principal {
+        flex-direction: column; /* columna en vez de fila */
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .texto h1 {
+        font-size: 2em;
+    }
+
+    .texto p {
+        font-size: 1.2em;
+    }
+
+    .texto button {
+        width: 100%;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .imagen {
+        justify-content: center; /* centramos la imagen */
+        margin-top: 20px;
+    }
+
+    .imagen img {
+        max-width: 90%; /* un poquito de margen */
+    }
+}
+
 
